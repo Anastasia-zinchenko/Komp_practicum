@@ -1,0 +1,27 @@
+//Complex numbers
+#include <iostream>
+#include <math.h>
+#include <complex>
+using namespace std;
+int main ()
+{
+complex <double> z1 (-1.0, 1.0);
+complex <double> z2 (-2.0, -2.0);
+complex <double> z3 (-1.0, 1.0);
+double x = -1.0;
+double y = 1.0;
+double q = pow((pow(x,2) + pow(y,2)),(1/2));
+double u = atan (y/x);
+std::complex<double> s = z1 + z2;//сумма комплексных чисел
+std::complex<double> r = z1 - z2;//разность комплексных чисел
+std::complex<double> d = z1 / z2;//деление комплексных чисел
+std::complex<double> p = z1 * z2;//умножение комплексных чисел
+cout << s;
+cout << r;
+cout << p;
+cout << d;
+cout << pow (z3, 4);//четвертая степень комплексного числа
+cout << pow (z3, (1/3));//корень третьей степени комплексного числа 
+
+return 0;
+}
