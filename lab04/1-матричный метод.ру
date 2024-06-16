@@ -1,0 +1,8 @@
+import numpy
+
+M4 = numpy.array([[2., -8., -9., 5.], [-9., 9., -7., 6.], [-6., 7., 3., 8.], [-1., 8., 5., 1.]])
+v4 = numpy.array([-40., -58., -75., 1.])
+
+a = numpy.linalg.solve(M4, v4)
+print('Решение СЛАУ')
+print(a)
